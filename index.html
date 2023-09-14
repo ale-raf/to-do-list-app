@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      src="https://kit.fontawesome.com/7242f47642.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+    <title>To Do List App</title>
+  </head>
+  <body>
+    <main class="h-screen w-screen flex flex-col justify-center items-center">
+      <h1 class="mb-10 text-3xl font-bold capitalize">todolist app</h1>
+
+      <form
+        class="w-1/2 mb-10 flex items-center justify-between gap-2"
+        action="#"
+      >
+        <input
+          class="input-text w-11/12 p-4 text-lg text-blue-500 rounded-sm border-2 border-solid border-gray-300 outline-none focus:border-2 focus:border-solid focus:border-yellow-400"
+          type="text"
+          name="item"
+          id="item"
+          placeholder="Add your task..."
+        />
+        <button
+          class="add-item w-1/12 p-4 bg-blue-500 text-lg font-bold text-white rounded-sm hover:bg-blue-900"
+          type="submit"
+        >
+          +
+        </button>
+      </form>
+
+      <div class="w-1/2">
+        <div class="list-container"></div>
+        <div class="w-full my-5 mx-auto flex justify-between items-center">
+          <div
+            class="relative h-11 w-1/3 flex border-2 border-solid border-gray-300 text-center text-lg text-gray-400 rounded-sm"
+          >
+            <p
+              class="done-task absolute top-[7px] left-1/4 text-lg text-gray-500"
+            >
+              There is no task
+            </p>
+            <div class="bg-yellow-400"></div>
+          </div>
+          <button
+            class="remove-checked w-1/3 py-2 px-4 flex justify-evenly bg-blue-500 text-lg text-white rounded-sm hover:bg-blue-900"
+          >
+            Remove checked item
+            <span class="font-bold">x</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
